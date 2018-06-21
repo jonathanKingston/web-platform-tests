@@ -356,6 +356,7 @@ interface Element : Node {
   sequence<DOMString> getAttributeNames();
   DOMString? getAttribute(DOMString qualifiedName);
   DOMString? getAttributeNS(DOMString? namespace, DOMString localName);
+  boolean toggleAttribute(DOMString qualifiedName, optional boolean force);
   void setAttribute(DOMString qualifiedName, DOMString value);
   void setAttributeNS(DOMString? namespace, DOMString qualifiedName, DOMString value);
   void removeAttribute(DOMString qualifiedName);
